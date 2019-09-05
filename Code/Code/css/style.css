@@ -1,0 +1,144 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+* {
+  box-sizing: border-box; }
+
+body {
+  color: #757575;
+  font-family: 'Open Sans Condensed', sans-serif; }
+
+.container {
+  width: 80%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px; }
+
+.clear:after {
+  content: ' ';
+  display: table;
+  clear: both;
+  visibility: hidden; }
+
+.pricing-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around; }
+  .pricing-wrapper .pricing-section {
+    max-width: 300px;
+    width: 30%;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 0 15px rgba(71, 161, 246, 0.5); }
+    .pricing-wrapper .pricing-section .pricing-header {
+      min-height: 180px;
+      background: #47a1f6;
+      color: #fff;
+      padding: 25px;
+      position: relative;
+      overflow: hidden;
+      border-radius: 5px; }
+      .pricing-wrapper .pricing-section .pricing-header .heading {
+        font-size: 24px;
+        font-weight: normal; }
+      .pricing-wrapper .pricing-section .pricing-header .icon-wrap {
+        padding: 30px 0;
+        font-size: 72px; }
+      .pricing-wrapper .pricing-section .pricing-header:before, .pricing-wrapper .pricing-section .pricing-header:after {
+        content: ' ';
+        width: 100%;
+        height: 35px;
+        position: absolute;
+        left: -10px;
+        bottom: -1px;
+        background: url("../img/wave3.png");
+        background-size: 100% 100%;
+        filter: drop-shadow(4px 4px 10px white);
+        opacity: 0.8; }
+      .pricing-wrapper .pricing-section .pricing-header:after {
+        left: 20px;
+        bottom: -1px; }
+    .pricing-wrapper .pricing-section .main-pricing-content {
+      padding: 35px 20px;
+      font-size: 18px; }
+      .pricing-wrapper .pricing-section .main-pricing-content .top-content {
+        margin-bottom: 25px; }
+      .pricing-wrapper .pricing-section .main-pricing-content .bottom-content .bottom {
+        font-size: 14px;
+        font-weight: bold; }
+    .pricing-wrapper .pricing-section .button-wrapper a {
+      display: inline-block;
+      padding: 10px 40px;
+      border-radius: 40px;
+      text-decoration: none;
+      text-transform: uppercase;
+      background: white;
+      box-shadow: 0 0 5px #47a1f6;
+      position: relative;
+      top: 20px; }
+    .pricing-wrapper .pricing-section.purple {
+      box-shadow: 0 0 15px rgba(143, 39, 247, 0.5); }
+      .pricing-wrapper .pricing-section.purple .pricing-header {
+        background: #8f27f7; }
+      .pricing-wrapper .pricing-section.purple .button-wrapper a {
+        box-shadow: 0 0 5px #8f27f7; }
+    .pricing-wrapper .pricing-section.pink {
+      box-shadow: 0 0 15px rgba(252, 61, 94, 0.5); }
+      .pricing-wrapper .pricing-section.pink .pricing-header {
+        background: #fc3dc2; }
+      .pricing-wrapper .pricing-section.pink .button-wrapper a {
+        box-shadow: 0 0 5px #fc3dc2; }
+
+@media (max-width: 764px) {
+  .pricing-wrapper {
+    display: block; }
+    .pricing-wrapper .pricing-section {
+      width: 100%;
+      margin: auto;
+      margin-bottom: 50px; } }
+
+/*# sourceMappingURL=style.css.map */
